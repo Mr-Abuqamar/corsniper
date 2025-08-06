@@ -1,6 +1,6 @@
 # 🔍 CORS Misconfiguration Scanner
 
-A powerful Python tool for identifying and exploiting **CORS (Cross-Origin Resource Sharing)** misconfigurations.  
+corsniper is a powerful Python tool for identifying and exploiting **CORS (Cross-Origin Resource Sharing)** misconfigurations.  
 This scanner helps penetration testers, bug bounty hunters, and security researchers detect exploitable CORS setups that may lead to data leaks or account takeovers.
 
 ---
