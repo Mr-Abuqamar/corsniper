@@ -206,7 +206,7 @@ def help():
 
 
 def main():
-     if (len(sys.argv) < 3 or sys.argv[1] == '-h' or sys.argv[1] == '--help'):
+     if (len(sys.argv) < 3 or sys.argv[1] != '-u' or sys.argv[1] != '--url' or sys.argv[1] != '-l' or sys.argv[1] != '--list'):
         help()
      elif (sys.argv[1] == '-u' or sys.argv[1] == '--url'):
         target_scan(sys.argv[2])
