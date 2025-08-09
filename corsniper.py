@@ -200,13 +200,13 @@ def sensitive_subdomains(target):
        
        
 def help():
-     print('Usage: python wood.py [arguments]\n\nAvailable arguments:\n-u, --url: The target URL (-u http://example.com)\n-h, --help View help list\n-l, --list: Enter a list of targets\n\nUsage examples:\n\npython wood.py -u https://inditex.com \npython wood.py --list targets.txt')
+     print('Usage: python wood.py [arguments]\n\nAvailable arguments:\n-u, --url: The target URL (-u http://example.com)\n-h, --help View help list\n-l, --list: Enter a list of targets\n\nUsage examples:\n\npython wood.py -u https://example.com \npython wood.py --list targets.txt')
 
 
 
 
 def main():
-     if (len(sys.argv) < 3 or sys.argv[1] != '-u' or sys.argv[1] != '--url' or sys.argv[1] != '-l' or sys.argv[1] != '--list'):
+     if len(sys.argv) < 3 or sys.argv[1] not in ['-u', '--url', '-l', '--list']:
         help()
      elif (sys.argv[1] == '-u' or sys.argv[1] == '--url'):
         target_scan(sys.argv[2])
